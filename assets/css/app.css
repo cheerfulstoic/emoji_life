@@ -1,0 +1,12 @@
+/* This file is for your main application css. */
+
+@import "./reset.css";
+
+@import "../../deps/phoenix_live_view/assets/css/live_view.css";
+
+
+body {
+  font-size: 5px;
+  letter-spacing: 0;
+  background-color: #D1D1D1;
+}

@@ -1,0 +1,14 @@
+<button phx-click="step">Step</button>
+
+<br/><br/>
+
+<%=
+lines = 
+  for y <- 1..@board.height do
+    Enum.map(1..@board.width, fn x -> EmojiLife.Game.at_position(@board, x, y) || "⬜️" end)
+    |> Enum.join("")
+  end
+
+raw Enum.join(lines, "<br>")
+%>
+
